@@ -1,0 +1,42 @@
+{
+  "moiInstallmentApplicationApp": {
+    "contract": {
+      "home": {
+        "title": "Contracts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Contract",
+        "createOrEditLabel": "Create or edit a Contract",
+        "notFound": "No Contracts found"
+      },
+      "created": "A new Contract is created with identifier {{ param }}",
+      "updated": "A Contract is updated with identifier {{ param }}",
+      "deleted": "A Contract is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Contract {{ id }}?"
+      },
+      "detail": {
+        "title": "Contract"
+      },
+      "id": "ID",
+      "contractNo": "Contract No",
+      "status": "Status",
+      "mobileNo": "Mobile No",
+      "address": "Address",
+      "fullName": "Full Name",
+      "customerId": "Customer Id",
+      "nationalId": "National Id",
+      "passportNo": "Passport No",
+      "countryId": "Country Id",
+      "tradeLicense": "Trade License",
+      "signDate": "Sign Date",
+      "userId": "User Id",
+      "actualContractedAmount": "Actual Contracted Amount",
+      "interestPercentage": "Interest Percentage",
+      "contractAmount": "Contract Amount",
+      "trafficContract": "Traffic Contract",
+      "installmentPlan": "Installment Plan",
+      "contractSystemFees": "Contract System Fees",
+      "contractPayments": "Contract Payments"
+    }
+  }
+}

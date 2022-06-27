@@ -1,0 +1,31 @@
+{
+  "moiInstallmentApplicationApp": {
+    "trafficContract": {
+      "home": {
+        "title": "Traffic Contracts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Traffic Contract",
+        "createOrEditLabel": "Create or edit a Traffic Contract",
+        "notFound": "No Traffic Contracts found"
+      },
+      "created": "A new Traffic Contract is created with identifier {{ param }}",
+      "updated": "A Traffic Contract is updated with identifier {{ param }}",
+      "deleted": "A Traffic Contract is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Traffic Contract {{ id }}?"
+      },
+      "detail": {
+        "title": "Traffic Contract"
+      },
+      "id": "ID",
+      "requestId": "Request Id",
+      "requestNo": "Request No",
+      "requestServiceCode": "Request Service Code",
+      "requestDescription": "Request Description",
+      "plateNo": "Plate No",
+      "motorNo": "Motor No",
+      "chassisNo": "Chassis No",
+      "trafficUnitCode": "Traffic Unit Code"
+    }
+  }
+}

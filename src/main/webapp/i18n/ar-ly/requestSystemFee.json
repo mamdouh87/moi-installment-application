@@ -1,0 +1,29 @@
+{
+  "moiInstallmentApplicationApp": {
+    "requestSystemFee": {
+      "home": {
+        "title": "Request System Fees",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Request System Fee",
+        "createOrEditLabel": "Create or edit a Request System Fee",
+        "notFound": "No Request System Fees found"
+      },
+      "created": "A new Request System Fee is created with identifier {{ param }}",
+      "updated": "A Request System Fee is updated with identifier {{ param }}",
+      "deleted": "A Request System Fee is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Request System Fee {{ id }}?"
+      },
+      "detail": {
+        "title": "Request System Fee"
+      },
+      "id": "ID",
+      "systemcode": "Systemcode",
+      "systemNameAr": "System Name Ar",
+      "systemNameEn": "System Name En",
+      "systemTotalFees": "System Total Fees",
+      "requestSystemFeeDetails": "Request System Fee Details",
+      "request": "Request"
+    }
+  }
+}

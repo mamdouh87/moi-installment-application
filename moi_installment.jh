@@ -1,0 +1,153 @@
+entity Customer{
+	nationalId String,
+    passportNo String,
+    countryId Integer,
+    mobileNo String,
+    address String,
+    fullName String,
+    tradeLicense String
+}
+relationship OneToMany {
+	Customer{requests} to Request
+}
+relationship OneToOne {
+	Customer{country} to Country
+}
+
+entity Country{
+	code String,
+    nameAr String,
+    nameEn String
+}
+
+entity Request{
+	requestNo String,
+    requestServiceCode String,
+    requestDescription String,
+    vehicleTypeId Integer,
+    licenseTypeId Integer,
+    plateNo String,
+    motorNo String,
+    chassisNo String,
+    trafficUnitCode String
+}
+relationship OneToMany{
+	Request{requestsystemFees} to RequestSystemFee
+}
+
+entity RequestSystemFee{
+	systemcode String,
+    systemNameAr String,
+    systemNameEn String,
+    systemTotalFees BigDecimal
+}
+relationship OneToMany{
+	RequestSystemFee{requestSystemFeeDetails} to RequestSystemFeeDetails
+}
+
+entity RequestSystemFeeDetails{
+	feeCode String,
+    feeNameAr String,
+    feeNameEn String,
+    feeAmount BigDecimal
+}
+
+entity Contract{
+	contractNo String,
+    status Integer,
+    mobileNo String,
+    address String,
+    fullName String,
+    customerId Integer,
+    nationalId String,
+    passportNo String,
+    countryId Integer,
+    tradeLicense String,
+    signDate Instant,
+    userId Integer,
+    actualContractedAmount BigDecimal,
+    interestPercentage BigDecimal,
+    contractAmount BigDecimal
+}
+relationship OneToOne{
+	Contract{trafficContract} to TrafficContract
+}
+
+relationship OneToOne{
+	Contract{installmentPlan} to InstallmentsPlan
+}
+
+entity TrafficContract{
+	requestId Integer,
+    requestNo String,
+    requestServiceCode String,
+    requestDescription String,
+    plateNo String,
+    motorNo String,
+    chassisNo String,
+    trafficUnitCode String
+}
+relationship OneToMany{
+	Contract{contractSystemFees} to ContractSystemFee
+}
+relationship OneToMany{
+	Contract{contractPayments} to ContractPayment
+}
+
+entity ContractSystemFee{
+	systemcode String,
+    systemNameAr String,
+    systemNameEn String,
+    systemTotalFees BigDecimal,
+    status Integer,
+    statusDate Instant
+}
+relationship OneToMany{
+	ContractSystemFee{contractSystemFeeDetails} to ContractSystemFeeDetails
+}
+
+entity ContractSystemFeeDetails{
+	feeCode String,
+    feeNameAr String,
+    feeNameEn String,
+    feeAmount BigDecimal,
+    status Integer,
+    statusDate Instant,
+    draftContractSystemFee Integer
+}
+
+entity ContractPayment{
+    status Integer,
+    installmentNo Integer,
+    installmentAmount BigDecimal,
+    installmentDate Instant,
+    installmentLateFees BigDecimal,
+    paymentDate Instant,
+    paymentType Integer,
+    receiptNo String,
+    creationFees BigDecimal
+}
+
+
+entity InstallmentsPlan{
+	status Integer,
+    nameAr String,
+    nameEn String,
+	numberOfInstallments Integer,
+    installmentIntervalDays Integer,
+    interestRate BigDecimal,
+    installmentGraceDays Integer,
+    dailyLatePercentage BigDecimal,
+    dailyLateFee BigDecimal,
+    maxTotalAmount BigDecimal,
+    minTotalAmount BigDecimal,
+    minFirstInstallmentAmount BigDecimal,
+    creationFees BigDecimal
+}
+
+
+paginate * with pagination
+
+service all with serviceClass
+
+dto all with mapstruct

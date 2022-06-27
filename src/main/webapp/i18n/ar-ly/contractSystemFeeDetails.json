@@ -1,0 +1,31 @@
+{
+  "moiInstallmentApplicationApp": {
+    "contractSystemFeeDetails": {
+      "home": {
+        "title": "Contract System Fee Details",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Contract System Fee Details",
+        "createOrEditLabel": "Create or edit a Contract System Fee Details",
+        "notFound": "No Contract System Fee Details found"
+      },
+      "created": "A new Contract System Fee Details is created with identifier {{ param }}",
+      "updated": "A Contract System Fee Details is updated with identifier {{ param }}",
+      "deleted": "A Contract System Fee Details is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Contract System Fee Details {{ id }}?"
+      },
+      "detail": {
+        "title": "Contract System Fee Details"
+      },
+      "id": "ID",
+      "feeCode": "Fee Code",
+      "feeNameAr": "Fee Name Ar",
+      "feeNameEn": "Fee Name En",
+      "feeAmount": "Fee Amount",
+      "status": "Status",
+      "statusDate": "Status Date",
+      "draftContractSystemFee": "Draft Contract System Fee",
+      "contractSystemFee": "Contract System Fee"
+    }
+  }
+}

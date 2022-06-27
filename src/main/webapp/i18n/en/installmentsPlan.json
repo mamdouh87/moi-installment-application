@@ -1,0 +1,36 @@
+{
+  "moiInstallmentApplicationApp": {
+    "installmentsPlan": {
+      "home": {
+        "title": "Installments Plans",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Installments Plan",
+        "createOrEditLabel": "Create or edit a Installments Plan",
+        "notFound": "No Installments Plans found"
+      },
+      "created": "A new Installments Plan is created with identifier {{ param }}",
+      "updated": "A Installments Plan is updated with identifier {{ param }}",
+      "deleted": "A Installments Plan is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Installments Plan {{ id }}?"
+      },
+      "detail": {
+        "title": "Installments Plan"
+      },
+      "id": "ID",
+      "status": "Status",
+      "nameAr": "Name Ar",
+      "nameEn": "Name En",
+      "numberOfInstallments": "Number Of Installments",
+      "installmentIntervalDays": "Installment Interval Days",
+      "interestRate": "Interest Rate",
+      "installmentGraceDays": "Installment Grace Days",
+      "dailyLatePercentage": "Daily Late Percentage",
+      "dailyLateFee": "Daily Late Fee",
+      "maxTotalAmount": "Max Total Amount",
+      "minTotalAmount": "Min Total Amount",
+      "minFirstInstallmentAmount": "Min First Installment Amount",
+      "creationFees": "Creation Fees"
+    }
+  }
+}

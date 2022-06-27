@@ -1,0 +1,103 @@
+{
+  "applications": "*",
+  "changelogDate": "20220627144802",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "contract",
+  "fields": [
+    {
+      "fieldName": "contractNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "mobileNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "address",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fullName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "customerId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "nationalId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "passportNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "countryId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "tradeLicense",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "signDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "userId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "actualContractedAmount",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "interestPercentage",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "contractAmount",
+      "fieldType": "BigDecimal"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Contract",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "trafficContract",
+      "otherEntityRelationshipName": "contract",
+      "ownerSide": true,
+      "relationshipName": "trafficContract",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "installmentsPlan",
+      "otherEntityRelationshipName": "contract",
+      "ownerSide": true,
+      "relationshipName": "installmentPlan",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "contractSystemFee",
+      "otherEntityRelationshipName": "contract",
+      "relationshipName": "contractSystemFees",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "contractPayment",
+      "otherEntityRelationshipName": "contract",
+      "relationshipName": "contractPayments",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

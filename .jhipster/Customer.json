@@ -1,0 +1,58 @@
+{
+  "applications": "*",
+  "changelogDate": "20220627144757",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "customer",
+  "fields": [
+    {
+      "fieldName": "nationalId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "passportNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "countryId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "mobileNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "address",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fullName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tradeLicense",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Customer",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "country",
+      "otherEntityRelationshipName": "customer",
+      "ownerSide": true,
+      "relationshipName": "country",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "request",
+      "otherEntityRelationshipName": "customer",
+      "relationshipName": "requests",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

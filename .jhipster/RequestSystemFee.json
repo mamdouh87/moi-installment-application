@@ -1,0 +1,45 @@
+{
+  "applications": "*",
+  "changelogDate": "20220627144800",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "request_system_fee",
+  "fields": [
+    {
+      "fieldName": "systemcode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "systemNameAr",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "systemNameEn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "systemTotalFees",
+      "fieldType": "BigDecimal"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "RequestSystemFee",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "requestSystemFeeDetails",
+      "otherEntityRelationshipName": "requestSystemFee",
+      "relationshipName": "requestSystemFeeDetails",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "request",
+      "otherEntityRelationshipName": "requestsystemFees",
+      "relationshipName": "request",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

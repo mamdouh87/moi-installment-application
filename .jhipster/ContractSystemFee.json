@@ -1,0 +1,53 @@
+{
+  "applications": "*",
+  "changelogDate": "20220627144804",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "contract_system_fee",
+  "fields": [
+    {
+      "fieldName": "systemcode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "systemNameAr",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "systemNameEn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "systemTotalFees",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "statusDate",
+      "fieldType": "Instant"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "ContractSystemFee",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "contractSystemFeeDetails",
+      "otherEntityRelationshipName": "contractSystemFee",
+      "relationshipName": "contractSystemFeeDetails",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "contract",
+      "otherEntityRelationshipName": "contractSystemFees",
+      "relationshipName": "contract",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

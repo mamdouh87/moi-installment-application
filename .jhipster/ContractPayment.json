@@ -1,0 +1,59 @@
+{
+  "applications": "*",
+  "changelogDate": "20220627144806",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "contract_payment",
+  "fields": [
+    {
+      "fieldName": "status",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "installmentNo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "installmentAmount",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "installmentDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "installmentLateFees",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "paymentDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "paymentType",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "receiptNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "creationFees",
+      "fieldType": "BigDecimal"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "ContractPayment",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "contract",
+      "otherEntityRelationshipName": "contractPayments",
+      "relationshipName": "contract",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

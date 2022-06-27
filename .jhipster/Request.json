@@ -1,0 +1,65 @@
+{
+  "applications": "*",
+  "changelogDate": "20220627144759",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "request",
+  "fields": [
+    {
+      "fieldName": "requestNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "requestServiceCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "requestDescription",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "vehicleTypeId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "licenseTypeId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "plateNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "motorNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chassisNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "trafficUnitCode",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Request",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "requestSystemFee",
+      "otherEntityRelationshipName": "request",
+      "relationshipName": "requestsystemFees",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "customer",
+      "otherEntityRelationshipName": "requests",
+      "relationshipName": "customer",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

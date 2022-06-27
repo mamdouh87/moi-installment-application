@@ -1,0 +1,33 @@
+{
+  "moiInstallmentApplicationApp": {
+    "contractPayment": {
+      "home": {
+        "title": "Contract Payments",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Contract Payment",
+        "createOrEditLabel": "Create or edit a Contract Payment",
+        "notFound": "No Contract Payments found"
+      },
+      "created": "A new Contract Payment is created with identifier {{ param }}",
+      "updated": "A Contract Payment is updated with identifier {{ param }}",
+      "deleted": "A Contract Payment is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Contract Payment {{ id }}?"
+      },
+      "detail": {
+        "title": "Contract Payment"
+      },
+      "id": "ID",
+      "status": "Status",
+      "installmentNo": "Installment No",
+      "installmentAmount": "Installment Amount",
+      "installmentDate": "Installment Date",
+      "installmentLateFees": "Installment Late Fees",
+      "paymentDate": "Payment Date",
+      "paymentType": "Payment Type",
+      "receiptNo": "Receipt No",
+      "creationFees": "Creation Fees",
+      "contract": "Contract"
+    }
+  }
+}

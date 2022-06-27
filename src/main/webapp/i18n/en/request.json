@@ -1,0 +1,34 @@
+{
+  "moiInstallmentApplicationApp": {
+    "request": {
+      "home": {
+        "title": "Requests",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Request",
+        "createOrEditLabel": "Create or edit a Request",
+        "notFound": "No Requests found"
+      },
+      "created": "A new Request is created with identifier {{ param }}",
+      "updated": "A Request is updated with identifier {{ param }}",
+      "deleted": "A Request is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Request {{ id }}?"
+      },
+      "detail": {
+        "title": "Request"
+      },
+      "id": "ID",
+      "requestNo": "Request No",
+      "requestServiceCode": "Request Service Code",
+      "requestDescription": "Request Description",
+      "vehicleTypeId": "Vehicle Type Id",
+      "licenseTypeId": "License Type Id",
+      "plateNo": "Plate No",
+      "motorNo": "Motor No",
+      "chassisNo": "Chassis No",
+      "trafficUnitCode": "Traffic Unit Code",
+      "requestsystemFees": "Requestsystem Fees",
+      "customer": "Customer"
+    }
+  }
+}

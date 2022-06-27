@@ -1,0 +1,68 @@
+{
+  "applications": "*",
+  "changelogDate": "20220627144807",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "installments_plan",
+  "fields": [
+    {
+      "fieldName": "status",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "nameAr",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nameEn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "numberOfInstallments",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "installmentIntervalDays",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "interestRate",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "installmentGraceDays",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "dailyLatePercentage",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "dailyLateFee",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "maxTotalAmount",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "minTotalAmount",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "minFirstInstallmentAmount",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "creationFees",
+      "fieldType": "BigDecimal"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "InstallmentsPlan",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceClass"
+}

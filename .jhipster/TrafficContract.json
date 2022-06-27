@@ -1,0 +1,48 @@
+{
+  "applications": "*",
+  "changelogDate": "20220627144803",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "traffic_contract",
+  "fields": [
+    {
+      "fieldName": "requestId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "requestNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "requestServiceCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "requestDescription",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "plateNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "motorNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chassisNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "trafficUnitCode",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "TrafficContract",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceClass"
+}
